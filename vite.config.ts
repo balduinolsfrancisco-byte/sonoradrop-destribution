@@ -8,6 +8,7 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     allowedHosts: true,
+    // o preview do Arena é servido por proxy HTTPS; deixa o Vite negociar o HMR
     hmr: { clientPort: 443, protocol: 'wss' },
   },
   preview: {
